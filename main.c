@@ -210,6 +210,9 @@ int main(void) {
     GPIOA->CRH |= GPIO_CRH_MODE11_0; 
     GPIOA->CRH &= ~(GPIO_CRH_CNF12 | GPIO_CRH_MODE12); 
     GPIOA->CRH |= GPIO_CRH_MODE12_0;
+
+
+    
     SPI1->CR1 &= ~SPI_CR1_DFF;
     SPI1->CR1 &= ~SPI_CR1_CRCEN;
     SPI1->CR1 |= SPI_CR1_SSI;
